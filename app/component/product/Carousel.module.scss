@@ -1,0 +1,14 @@
+.custom-swiper {
+    :global{
+    .swiper-button-next:after {
+        color:black;
+        font-size:20px;
+    }
+    .swiper-button-prev:after {
+        color:black;
+        font-size:20px;
+    }
+
+}
+}
+
