@@ -5,57 +5,109 @@ import Navbar from "../component/navbar/Navbar";
 import Footer from "../component/Footer/Footer";
 import BlogIcon from "/app/assets/blog/blogIcon.svg";
 import BlogPicture from "/app/assets/blog/blogPicture.png";
+import styles from "./blog.module.css";
+import clsx from "clsx";
+import Card from "../component/blogcard/Card";
 
 export default function Page() {
   return (
-    <div className="gap-[20px]">
-      <div
-        className="bg-cover bg-top w-screen h-screen"
+    <div>
+      <section
+        className={clsx(
+          styles.heroContainer,
+          "w-full h-full bg-cover pt-[144px] pb-[24px] px-[16px] sm:p-[144px_80px_24px_80px] lg:p-[144px_160px_24px_160px]"
+        )}
         style={{
           backgroundImage: `url(${backgroundBlog.src})`,
-          width: "100%",
-          height: "100%",
-          padding: "144px 160px 24px 160px",
         }}
       >
-        <Navbar />
-        <div className="flex justify-between">
-          <h1 className="text-[36px]">
-            Our ideas about{" "}
-            <span className="text-blue-600">Financial Technologies</span>
-          </h1>
-          <div className="bg-white border-[#0779c2] border-[2px] rounded-[12px] items-center px-[24px] py-[8px] flex gap-2 text-[16px]">
-            <Image src={BlogIcon} alt="blog Icon" />
-            <p className="text-blue">BLOG</p>
+        <div className="flex flex-col gap-[36px]">
+          <div className="flex flex-col gap-[12px] justify-between md:flex-row sm:items-center items-start">
+            <h1 className="text-[20px] sm:text-[36px]">
+              Our Ideas and Insight about{" "}
+              <span className="text-blue-500">Financial Technology</span>
+            </h1>
+            <div className="bg-white flex px-[16px] py-[8px] rounded-[12px] items-center gap-[12px] border-2 border-[#0779C2] flex-shrink-0 ">
+              <Image src={BlogIcon} alt="blog Icon" />
+              <h2 className="text-blue-500 text-[12px] sm:text-[16px]">BLOG</h2>
+            </div>
+          </div>
+          <div className="flex flex-col gap-[32px] sm:gap-[51px] items-center ">
+            <div className="bg-white p-[12px] lg:p-[24px] flex flex-col gap-[12px]  lg:gap-[24px] lg:flex-row rounded-[12px] shadow-md ">
+              <Image
+                src={BlogPicture}
+                alt="blog Picture"
+                height={312}
+                objectFit="cover"
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+                className="rounded-[4px] bg-cover"
+              />
+              <div className="flex flex-col gap-[16px]">
+                <div className="flex justify-between items-center self-stretch">
+                  <div className="bg-blue-200 px-[8px] py-[4px] sm:px-[12px] sm:py-[8px] rounded-[8px]">
+                    <h1 className="text-blue-600 text-[14px] sm:text-[18px] font-semibold ">
+                      Technology
+                    </h1>
+                  </div>
+                  <h2 className=" text-[12px] sm:text-[16px]">24-02-2024</h2>
+                </div>
+                <div className="flex flex-col ">
+                  <h1 className="text-[16px] sm:text-[24px]">
+                    Data Science Fits into the Cloud Spend Equation
+                  </h1>
+                  <h2 className=" text-[12px] sm:text-[16px] leading-[44px] ">
+                    Last year, one of our users—Yuval Shwager, the head of
+                    product at Mixtiles—came to us with a question: “We want to
+                    offer buy now, pay later (BNPL) options, but how do we know
+                    they won’t add checkout friction or cannibalize our card
+                    volume?”
+                  </h2>
+                </div>
+                <div>
+                  <button className="text-blue-500 text-[20px]">
+                    {" "}
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col w-full sm:flex-row gap-[24px] justify-between">
+              <Card
+                src={BlogPicture}
+                publishedAt={"11-07-2024"}
+                alt={"blog"}
+                tag={"Tech"}
+                title={"Data Science Fits into the Cloud Spend Equation"}
+                url={"/"}
+              />
+              <Card
+                src={BlogPicture}
+                publishedAt={"11-07-2024"}
+                alt={"blog"}
+                tag={"Tech"}
+                title={"Data Science Fits into the Cloud Spend Equation"}
+                url={"/"}
+              />
+              <Card
+                src={BlogPicture}
+                publishedAt={"11-07-2024"}
+                alt={"blog"}
+                tag={"Tech"}
+                title={"Data Science Fits into the Cloud Spend Equation"}
+                url={"/"}
+              />
+            </div>
+            <button className="rounded-md border border-[#1EA2EC] text-[#1EA2EC] p-[12px] hover:bg-[#1EA2EC] hover:text-white w-[182px]">
+              See More Article
+            </button>
           </div>
         </div>
-        <div className="flex p-[24px] gap-[24px] bg-white">
-          <div className="gap-4">
-            <div className="flex justify-between">
-              <h1 className="text-[18px] font-semibold bg-blue-300 text-blue-800 px-[12px] py-[8px]">
-                Technology
-              </h1>
-              <h2 className="font-normal text-black text-[16px]">
-                {" "}
-                24-01-2024{" "}
-              </h2>
-            </div>
-            <div className="text-black text-[24px]">
-              Data Science Fits into the Cloud Spend Equation
-            </div>
-            <div className="text-black text-[16px]">
-              Last year, one of our users—Yuval Shwager, the head of product
-              at Mixtiles—came to us with a question: “We want to offer buy now,
-              pay later (BNPL) options, but how do we know they won’t add
-              checkout friction or cannibalize our card volume?”
-            </div>
-            <button className="text-blue-600 underline "> Read More</button>
-          </div>
-          <div className="">
-            <Image src={BlogPicture} alt="blog Picture" />
-          </div>
-        </div>
-      </div>
+      </section>
+      <Navbar />
       <Footer />
     </div>
   );

@@ -25,7 +25,9 @@
   display: flex;
   touch-action: pan-y pinch-zoom;
   margin-left: calc(var(--slide-spacing) * -1);
+  max-height: 300px !important;
 }
+
 .embla__slide {
   flex: 0 0 var(--slide-size);
   min-width: 0;
@@ -47,8 +49,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   justify-content: space-between;
-  gap: 1.2rem;
-  margin-top: 1.8rem;
+  gap: 12px;
 }
 .embla__buttons {
   display: grid;

@@ -16,7 +16,7 @@ const Button = (props) => {
     <button
       onClick={onClick}
       className={clsx(
-        "whitespace-nowrap border-[2px] border-[#1EA2EC] bg-white px-[8px] py-[4px] text-xs text-[#1EA2EC] sm:px-4 sm:py-3 sm:text-base",
+        "whitespace-nowrap border-[2px] border-[#1EA2EC] bg-white px-[8px] py-[4px] text-[10px] text-[#737373] sm:px-4 sm:py-3 sm:text-base",
         variantClassName,
         className
       )}

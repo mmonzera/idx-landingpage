@@ -2,16 +2,41 @@ import React from "react";
 import blog from "/app/assets/blog-1.png";
 import Image from "next/image";
 import Link from "next/link";
+import Card from "@/app/component/blogcard/Card";
 
 const Blog: React.FC = () => {
   return (
-    <div className="bg-[#F9FCFF] w-100% flex flex-col items-center py-[72px] px-[16px] sm:px-[160px] gap-[56px]">
-      <h1 className="text-[#262626] px-[16px] font-regular text-[36px] sm:text-[44px] ">
+    <div className="bg-[#F9FCFF] w-100% flex flex-col items-center py-[24px] sm:py-[72px] px-[16px] sm:px-[160px] gap-[24px] sm:gap-[56px]">
+      <h1 className="text-[#262626] px-[16px] font-regular text-[16px] sm:text-[44px] ">
         Insightful resource of our{" "}
         <span className="text-[#07619D] font-bold"> expertise </span>
       </h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-[24px]">
-        <div className="flex flex-col gap-[16px] p-[16px] shadow-md rounded-[12px] bg-white">
+        <Card
+          src={blog}
+          publishedAt={"11-07-2024"}
+          alt={"blog"}
+          tag={"Tech"}
+          title={"Data Science Fits into the Cloud Spend Equation"}
+          url={"/"}
+        />
+        <Card
+          src={blog}
+          publishedAt={"11-07-2024"}
+          alt={"blog"}
+          tag={"Tech"}
+          title={"Data Science Fits into the Cloud Spend Equation"}
+          url={"/"}
+        />
+        <Card
+          src={blog}
+          publishedAt={"11-07-2024"}
+          alt={"blog"}
+          tag={"Tech"}
+          title={"Data Science Fits into the Cloud Spend Equation"}
+          url={"/"}
+        />
+        {/* <div className="flex flex-col gap-[16px] p-[16px] shadow-md rounded-[12px] bg-white">
           <Image
             height={209}
             objectFit="cover"
@@ -33,7 +58,7 @@ const Blog: React.FC = () => {
             Data Science Fits into the Cloud Spend Equation
           </h1>
           <p className="font-semibold text-[#07619D]">Tech</p>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-[16px] p-[16px] shadow-md rounded-[12px] bg-white">
           <Image
             height={209}

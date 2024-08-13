@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
     <div className="bg-white px-[16px] sm:px-[160px] py-[36px]">
       <div className="gap-[40px] flex flex-col">
         <Image className="" src={IDXOptus} alt="Logo IDXO" />
-        <div className="flex flex-col gap-5 sm:flex-row sm:gap-3 sm:justify-between">
+        <div className="flex flex-col flex-wrap gap-5 sm:flex-row sm:gap-3 sm:justify-between">
           <div className="flex flex-col gap-[12px] w-[285px] leading-[40px]">
             <h1 className="font-semibold text-[#07619D] text-[32px]">
               Address
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <Image className="" src={ISO} alt="Logo ISO" />
+          <Image className="flex-shrink-0" src={ISO} alt="Logo ISO" />
         </div>
         <div className="flex gap-[12px]">
           <Image

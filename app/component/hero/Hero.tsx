@@ -11,19 +11,24 @@ const HeroSection: React.FC = () => {
     <section
       className={clsx(
         styles.heroContainer,
-        "w-full h-full bg-cover py-[160px] px-[16px] md:p-[144px_160px_24px_160px]"
+        "w-full h-full bg-cover py-[16px] px-[16px] sm:p-[144px_80px_24px_80px] lg:p-[144px_160px_24px_160px]"
       )}
       style={{
         backgroundImage: `url(${HeroBackground.src})`,
       }}
     >
       <div className={styles.heroContent}>
-        <center className="flex flex-col items-center gap-6 p-4 md:px-16 self-stretch">
+        <center className="flex flex-col items-center gap-[24px] sm:gap-6 p-4 md:px-16 self-stretch">
           <div className={styles.heroFirstTitle}>
             <Image src={firstTitleIcon} alt="firstTitleIcon" />
             <p> AI-Powered & Fintech Solution</p>
           </div>
-          <h1 className={clsx(styles.heroTitle, "font-normal")}>
+          <h1
+            className={clsx(
+              styles.heroTitle,
+              "font-normal text-[32px] sm:text-[64px] "
+            )}
+          >
             Proven AI-powered with{" "}
             <span className="text-[#07619D] font-bold">API & Cloud-ready</span>{" "}
             solution
@@ -37,7 +42,7 @@ const HeroSection: React.FC = () => {
           </p>
           <button className={styles.heroButton}>Try Our Product</button>
           <div className="relative">
-            <div className="absolute left-[-20px] top-[-20px] right-[-20px] bottom-[-20px] z-10 h-[622px] w-[1260px]">
+            <div className="absolute left-[-20px] top-[-20px] right-[-20px] bottom-[-20px] z-10">
               <Image
                 className={styles.backgroundLaptop}
                 src={backgroundLaptop}

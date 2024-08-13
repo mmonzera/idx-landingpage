@@ -10,7 +10,7 @@ const Trustedpartners: React.FC = () => {
   return (
     <div className="px-[16px] md:px-[160px] py-[48px] gap-[24px] bg-white">
       <p>Trusted by our partners</p>
-      <div className="items-center self-stretch justify-between gap-[48px] grid-cols-1 sm:grid-cols-3 md:grid-cols-5 grid">
+      <div className="items-center self-stretch justify-between gap-[48px] grid-cols-3 md:grid-cols-5 grid">
         <Image src={LogoBca} alt="logoBca" />
         <Image src={LogoBni} alt="logoBni" />
         <Image src={LogoBtn} alt="logoBtn" />

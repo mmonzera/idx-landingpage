@@ -8,7 +8,7 @@ export default function Product() {
   const [controlledSwiper, setControlledSwiper] = useState(null);
   console.log(controlledSwiper);
   return (
-    <div className="bg-white pb-[36px]">
+    <div className="bg-white pb-[12px] sm:pb-[36px]">
       <ProductCircle controlledSwiper={controlledSwiper} />
       <Carousel
         controlledSwiper={controlledSwiper}

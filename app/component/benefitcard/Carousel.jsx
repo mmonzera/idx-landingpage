@@ -28,72 +28,82 @@ const EmblaCarousel = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">
-            <div className="flex flex-col gap-6">
-            <Image src={cardIcon} alt="cardIcon"/>
-            <h2 className="font-semibold text-[36px] text-[#525252]  ">
-              Roll-out new products in Days, Not Months
-            </h2>
-            <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
-              Business users can create underwriting workflows or use templates
-              with iDecision's low-code environment, featuring API management
-              and form generation.
-            </h3>
+            <div className="flex flex-col gap-2 sm:gap-6">
+              <Image src={cardIcon} alt="cardIcon" />
+              <h2 className="font-semibold text-[16px] sm:text-[36px] text-[#525252]  ">
+                Roll-out new products in Days, Not Months
+              </h2>
+              <h3 className="text:[12px] sm:text-[24px] text-[#525252] leading:8px sm:leading-[50.49px] sm:tracking-[-0.505px] ">
+                Business users can create underwriting workflows or use
+                templates with iDecision's low-code environment, featuring API
+                management and form generation.
+              </h3>
             </div>
           </div>
           <div className="embla__slide">
-          <div className="flex flex-col gap-6">
-            <Image src={cardIcon} alt="cardIcon" />
-            <h2 className="font-semibold text-[36px] text-[#525252]  ">
-              Achieve 90%+ STP in loan processing
-            </h2>
-            <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">Making optimal decisions in mere second by incorporating risk policies and risk calculation
-              from multiple data sources,risk scoring,ML models,and test strategies.
-            </h3>
-          </div>
-          </div>
-          <div className="embla__slide">
-          <div className="flex flex-col gap-6">
-            <Image src={cardIcon} alt="cardIcon" />
-            <h2 className="font-semibold text-[36px] text-[#525252]  ">
-              Achieve 90%+ STP in loan processing
-            </h2>
-            <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">Making optimal decisions in mere second by incorporating risk policies and risk calculation
-              from multiple data sources,risk scoring,ML models,and test strategies.
-            </h3>
-          </div>
+            <div className="flex flex-col gap-2 sm:gap-6">
+              <Image src={cardIcon} alt="cardIcon" />
+              <h2 className="font-semibold text-[16px] sm:text-[36px] text-[#525252]  ">
+                Achieve 90%+ STP in loan processing
+              </h2>
+              <h3 className="text:[12px] sm:text-[24px] text-[#525252] leading:8px sm:leading-[50.49px] sm:tracking-[-0.505px]  ">
+                Making optimal decisions in mere second by incorporating risk
+                policies and risk calculation from multiple data sources,risk
+                scoring,ML models,and test strategies.
+              </h3>
+            </div>
           </div>
           <div className="embla__slide">
-          <div className="flex flex-col gap-6">
-            <Image src={cardIcon} alt="cardIcon" />
-            <h2 className="font-semibold text-[36px] text-[#525252]  ">
-              Achieve 90%+ STP in loan processing
-            </h2>
-            <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">Making optimal decisions in mere second by incorporating risk policies and risk calculation
-              from multiple data sources,risk scoring,ML models,and test strategies.
-            </h3>
-          </div>
-          </div>
-          <div className="embla__slide">
-          <div className="flex flex-col gap-6">
-            <Image src={cardIcon} alt="cardIcon" />
-            <h2 className="font-semibold text-[36px] text-[#525252]  ">
-              Achieve 90%+ STP in loan processing
-            </h2>
-            <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">Making optimal decisions in mere second by incorporating risk policies and risk calculation
-              from multiple data sources,risk scoring,ML models,and test strategies.
-            </h3>
-          </div>
+            <div className="flex flex-col gap-6">
+              <Image src={cardIcon} alt="cardIcon" />
+              <h2 className="font-semibold text-[36px] text-[#525252]  ">
+                Achieve 90%+ STP in loan processing
+              </h2>
+              <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
+                Making optimal decisions in mere second by incorporating risk
+                policies and risk calculation from multiple data sources,risk
+                scoring,ML models,and test strategies.
+              </h3>
+            </div>
           </div>
           <div className="embla__slide">
-          <div className="flex flex-col gap-6">
-            <Image src={cardIcon} alt="cardIcon" />
-            <h2 className="font-semibold text-[36px] text-[#525252]  ">
-              Achieve 90%+ STP in loan processing
-            </h2>
-            <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">Making optimal decisions in mere second by incorporating risk policies and risk calculation
-              from multiple data sources,risk scoring,ML models,and test strategies.
-            </h3>
+            <div className="flex flex-col gap-6">
+              <Image src={cardIcon} alt="cardIcon" />
+              <h2 className="font-semibold text-[36px] text-[#525252]  ">
+                Achieve 90%+ STP in loan processing
+              </h2>
+              <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
+                Making optimal decisions in mere second by incorporating risk
+                policies and risk calculation from multiple data sources,risk
+                scoring,ML models,and test strategies.
+              </h3>
+            </div>
           </div>
+          <div className="embla__slide">
+            <div className="flex flex-col gap-6">
+              <Image src={cardIcon} alt="cardIcon" />
+              <h2 className="font-semibold text-[36px] text-[#525252]  ">
+                Achieve 90%+ STP in loan processing
+              </h2>
+              <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
+                Making optimal decisions in mere second by incorporating risk
+                policies and risk calculation from multiple data sources,risk
+                scoring,ML models,and test strategies.
+              </h3>
+            </div>
+          </div>
+          <div className="embla__slide">
+            <div className="flex flex-col gap-6">
+              <Image src={cardIcon} alt="cardIcon" />
+              <h2 className="font-semibold text-[36px] text-[#525252]  ">
+                Achieve 90%+ STP in loan processing
+              </h2>
+              <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
+                Making optimal decisions in mere second by incorporating risk
+                policies and risk calculation from multiple data sources,risk
+                scoring,ML models,and test strategies.
+              </h3>
+            </div>
           </div>
         </div>
       </div>

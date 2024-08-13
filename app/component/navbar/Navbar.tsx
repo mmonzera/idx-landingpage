@@ -10,7 +10,9 @@ const Navbar: React.FC = () => {
         <Link href="/">
           <Image src={Logo} alt="Logo" width={173} height={43} />{" "}
         </Link>
-        <button className={styles.inquiryButton}>Inquiry</button>
+        <Link href="/inquiry">
+          <button className={styles.inquiryButton}>Inquiry</button>
+        </Link>
       </nav>
     </div>
   );

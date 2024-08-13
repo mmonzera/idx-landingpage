@@ -7,8 +7,8 @@ import Button from "./Button";
 const ProductCircle = (props) => {
   const { controlledSwiper } = props;
   return (
-    <div className="bg-white w-100% flex flex-col items-center px-[160px] py-[60px] gap-[48px]">
-      <h1 className="font-normal text-black text-[36px] leading-loose tracking-tight text-center">
+    <div className="bg-white w-100% flex flex-col px-[16px] items-center sm:px-[300px] py-[24px] gap-[32px]">
+      <h1 className="font-normal text-black text-[16px] sm:text-[44px] leading-loose tracking-tight text-center">
         Unlock{" "}
         <span className="text-[#07619D] font-semibold">
           unparalleled advantages{" "}
@@ -18,7 +18,7 @@ const ProductCircle = (props) => {
       <div className="flex flex-col items-center justify-center">
         <div className="relative">
           <Image
-            className="w-[550px] h-[550px]"
+            className="w-[300px] h-[300px] sm:w-[550px] sm:h-[550px]"
             src={ProductCircleIcon}
             alt="ProductCircle"
           />
@@ -55,7 +55,7 @@ const ProductCircle = (props) => {
               Collection Management
             </Button>
           </div>
-          <div className="absolute right-[3%] top-[32%] flex w-0 justify-center">
+          <div className="absolute right-[5%] top-[32%] flex w-0 justify-center">
             <Button
               variant="rounded"
               className="text-green-800 border-[#4ADE80]"
@@ -95,7 +95,7 @@ const ProductCircle = (props) => {
               Anti Money Laundry
             </Button>
           </div>
-          <div className="absolute right-[3%] bottom-[32%] flex w-0 justify-center">
+          <div className="absolute right-[5%] bottom-[32%] flex w-0 justify-center">
             <Button
               variant="rounded"
               className="text-[#D97706] border-[#FBBF24]"
@@ -125,16 +125,16 @@ const ProductCircle = (props) => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between gap-[24px]">
-        <div className="flex gap-[21px]">
-          <div className="h-[33px] w-[33px] bg-[#4ADE80]"></div>
-          <h2 className="text-[#525252] font-semibold text-[20px] items-center">
+      <div className="flex items-center gap-[12px] sm:gap-[24px]">
+        <div className="items-center flex gap-[8px] sm:gap-[20px]">
+          <div className="h-[16px] w-[16px] sm:h-[33px] sm:w-[33px] bg-[#4ADE80]"></div>
+          <h2 className="text-[#525252] font-semibold text-[12px] sm:text-[20px] items-center">
             Digital Lending Product
           </h2>
         </div>
-        <div className="flex gap-[21px]">
-          <div className="h-[33px] w-[33px] bg-[#FBBF24]"></div>
-          <h2 className="text-[#525252] font-semibold text-[20px] items-center">
+        <div className="items-center flex gap-[8px] sm:gap-[20px]">
+          <div className="h-[16px] w-[16px] sm:h-[33px] sm:w-[33px] bg-[#FBBF24]"></div>
+          <h2 className="text-[#525252] font-semibold text-[12px] sm:text-[20px] items-center">
             Financial Crime Management
           </h2>
         </div>

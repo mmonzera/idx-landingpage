@@ -32,13 +32,20 @@ const Carousel = (props) => {
         controller={{ control: controlledSwiper }}
       >
         <SwiperSlide>
-          <div className=" flex-col md:flex-row flex border-[#16A34A] rounded-[16px] border-[2px] p-[36px] bg-white shadow-[0px_2px_9.5px_0px_rgba(187,247,208,0.50)] gap-[24px]">
-            <Image src={dlpIcon} alt="dlpIcon" />
-            <div className="p-[8px] justify-between">
-              <h1 className="text-[#16A34A] text-[36px] font-semibold mb-3">
+          <div
+            className=" flex-col md:flex-row flex border-[#16A34A] rounded-[16px] border-[2px] px-[32px] py-[16px]
+          sm:p-[36px] bg-white shadow-[0px_2px_9.5px_0px_rgba(187,247,208,0.50)] gap-[8px] sm:gap-[24px]"
+          >
+            <Image
+              src={dlpIcon}
+              alt="dlpIcon"
+              className="w-[15%] h-[15%] sm:w-[15%] sm:h-[30%]"
+            />
+            <div className="p-[4px] justify-between">
+              <h1 className="text-[#16A34A] text-[16px] sm:text-[36px] font-semibold mb-3">
                 Collection Management
               </h1>
-              <p className="text-black text-[24px]">
+              <p className="text-black text-[12px] sm:text-[24px]">
                 {" "}
                 Smart delinquent account queuing and prioritization with
                 flexible & dynamic collection strategies: best time to call, who
@@ -49,13 +56,17 @@ const Carousel = (props) => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className=" flex border-[#16A34A] rounded-[16px] border-[2px] p-[36px] bg-white shadow-[0px_2px_9.5px_0px_rgba(187,247,208,0.50)] gap-[24px]">
-            <Image src={dlpIcon} alt="dlpIcon" />
-            <div className="p-[8px] justify-between">
-              <h1 className="text-[#16A34A] text-[36px] font-semibold">
+          <div className=" flex-col md:flex-row flex border-[#16A34A] rounded-[16px] border-[2px] px-[32px] py-[16px] sm:p-[36px] bg-white shadow-[0px_2px_9.5px_0px_rgba(187,247,208,0.50)] gap-[8px] sm:gap-[24px]">
+            <Image
+              src={dlpIcon}
+              alt="dlpIcon"
+              className="w-[15%] h-[15%] sm:w-[15%] sm:h-[30%]"
+            />
+            <div className="p-[4px] justify-between">
+              <h1 className="text-[#16A34A] text-[16px] sm:text-[36px] font-semibold mb-3">
                 Loan Management
               </h1>
-              <p className="text-black text-[24px]">
+              <p className="text-black text-[12px] sm:text-[24px]">
                 {" "}
                 Smart delinquent account queuing and prioritization with
                 flexible & dynamic collection strategies: best time to call, who
