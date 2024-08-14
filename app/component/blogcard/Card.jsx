@@ -2,8 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Card = (props) => {
-  const { src, alt, publishedAt, title, tag, url } = props;
+const Card = ({ src, alt, publishedAt, title, tag, url }) => {
   return (
     <Link
       href={url}

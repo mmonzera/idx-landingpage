@@ -22,89 +22,22 @@ const Blog: React.FC = () => {
         />
         <Card
           src={blog}
-          publishedAt={"11-07-2024"}
+          publishedAt={"18-07-2024"}
           alt={"blog"}
-          tag={"Tech"}
-          title={"Data Science Fits into the Cloud Spend Equation"}
+          tag={"Artificial Intelligent"}
+          title={"How iDecision Assist You in Loan Management with AI"}
           url={"/"}
         />
         <Card
           src={blog}
           publishedAt={"11-07-2024"}
           alt={"blog"}
-          tag={"Tech"}
-          title={"Data Science Fits into the Cloud Spend Equation"}
+          tag={"Finance"}
+          title={
+            "The Impact of Inflation on Business Owners (And What to Do About It)"
+          }
           url={"/"}
         />
-        {/* <div className="flex flex-col gap-[16px] p-[16px] shadow-md rounded-[12px] bg-white">
-          <Image
-            height={209}
-            objectFit="cover"
-            sizes="100vw"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-            className="rounded-[4px] bg-cover"
-            src={blog}
-            alt="blog"
-          />
-          <div>
-            <span className="flex text-[16px] text-[#0779C2] bg-[#E1F1FD] p-[8px] rounded-[4px] w-fit ">
-              <p>11 - 07 - 2024</p>
-            </span>
-          </div>
-          <h1 className="font-regular text-[24px]">
-            Data Science Fits into the Cloud Spend Equation
-          </h1>
-          <p className="font-semibold text-[#07619D]">Tech</p>
-        </div> */}
-        <div className="flex flex-col gap-[16px] p-[16px] shadow-md rounded-[12px] bg-white">
-          <Image
-            height={209}
-            objectFit="cover"
-            sizes="100vw"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-            className="rounded-[4px] bg-cover"
-            src={blog}
-            alt="blog"
-          />
-          <div>
-            <span className="flex text-[16px] text-[#0779C2] bg-[#E1F1FD] p-[8px] rounded-[4px] w-fit ">
-              <p>11 - 07 - 2024</p>
-            </span>
-          </div>
-          <h1 className="font-regular text-[24px]">
-            How iDecision Assist You in Loan Management with AI
-          </h1>
-          <p className="font-semibold text-[#07619D]">Artificial Inteligence</p>
-        </div>
-        <div className="flex flex-col gap-[16px] p-[16px] shadow-md rounded-[12px]  bg-white">
-          <Image
-            height={209}
-            objectFit="cover"
-            sizes="100vw"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-            className="rounded-[4px] bg-cover"
-            src={blog}
-            alt="blog"
-          />
-          <div>
-            <span className="flex text-[16px] text-[#0779C2] bg-[#E1F1FD] p-[8px] rounded-[4px] w-fit ">
-              <p>11 - 07 - 2024</p>
-            </span>
-          </div>
-          <h1 className="font-regular text-[24px]">
-            The Impact of Inflation on Business Owners
-          </h1>
-          <p className="font-semibold text-[#07619D]">Finance</p>
-        </div>
       </div>
       <Link href="/blog">
         <button className="rounded-md border border-[#1EA2EC] text-[#1EA2EC] p-[12px] hover:bg-[#1EA2EC] hover:text-white">

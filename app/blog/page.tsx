@@ -25,7 +25,9 @@ export default function Page() {
           <div className="flex flex-col gap-[12px] justify-between md:flex-row sm:items-center items-start">
             <h1 className="text-[20px] sm:text-[36px]">
               Our Ideas and Insight about{" "}
-              <span className="text-blue-500">Financial Technology</span>
+              <span className="text-[#0779C2] font-semibold">
+                Financial Technology
+              </span>
             </h1>
             <div className="bg-white flex px-[16px] py-[8px] rounded-[12px] items-center gap-[12px] border-2 border-[#0779C2] flex-shrink-0 ">
               <Image src={BlogIcon} alt="blog Icon" />
@@ -46,17 +48,17 @@ export default function Page() {
                 }}
                 className="rounded-[4px] bg-cover"
               />
-              <div className="flex flex-col gap-[16px]">
+              <div className="flex flex-col justify-between gap-[12px]">
                 <div className="flex justify-between items-center self-stretch">
-                  <div className="bg-blue-200 px-[8px] py-[4px] sm:px-[12px] sm:py-[8px] rounded-[8px]">
-                    <h1 className="text-blue-600 text-[14px] sm:text-[18px] font-semibold ">
+                  <div className="bg-[#F0F8FF] px-[8px] py-[4px] sm:px-[12px] sm:py-[8px] rounded-[8px]">
+                    <h1 className="text-[#07619D] text-[14px] sm:text-[18px] font-semibold ">
                       Technology
                     </h1>
                   </div>
                   <h2 className=" text-[12px] sm:text-[16px]">24-02-2024</h2>
                 </div>
                 <div className="flex flex-col ">
-                  <h1 className="text-[16px] sm:text-[24px]">
+                  <h1 className="text-[16px] sm:text-[24px] font-medium">
                     Data Science Fits into the Cloud Spend Equation
                   </h1>
                   <h2 className=" text-[12px] sm:text-[16px] leading-[44px] ">
@@ -68,7 +70,7 @@ export default function Page() {
                   </h2>
                 </div>
                 <div>
-                  <button className="text-blue-500 text-[20px]">
+                  <button className="text-[#0779C2] text-[16px]">
                     {" "}
                     Read More
                   </button>
@@ -89,7 +91,7 @@ export default function Page() {
                 publishedAt={"11-07-2024"}
                 alt={"blog"}
                 tag={"Tech"}
-                title={"Data Science Fits into the Cloud Spend Equation"}
+                title={"Hata Science Fits into the Cloud Spend Equation"}
                 url={"/"}
               />
               <Card
