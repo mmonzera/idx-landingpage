@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
 export async function POST(req) {
-  const { fullname, workemail, phonenumber, companyname, industry, inquiry } = await req.json();
+  const { fullname, workemail, phonenumber, companyname, industry, inquiry, recaptchaResponse } = await req.json();
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
@@ -12,6 +12,19 @@ export async function POST(req) {
       pass: process.env.MY_APP_PASS,
     },
   });
+
+  const recaptcha = await fetch(
+    `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.CAPTCHA_SECRET_KEY}&response=${recaptchaResponse}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        json: true,
+      },
+    }
+  ).then ((res)=> res.json());
+
+
 
   try {
     await transporter.sendMail({

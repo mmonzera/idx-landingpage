@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import toast, { Toaster } from "react-hot-toast";
 
 const InputForm = () => {
+  const [captcha, setCaptcha] = useState("");
   const [inputs, setInputs] = useState({
     fullname: "",
     workemail: "",
@@ -33,13 +35,24 @@ const InputForm = () => {
       inputs.inquiry
     ) {
       try {
+        const payload = {
+          ...inputs,
+          recaptchaResponse: captcha,
+        };
+
         const res = await fetch(`api/inputform`, {
           method: "POST",
           headers: {
             "Content-type": "application/json",
           },
-          body: JSON.stringify(inputs),
-        });
+          body: JSON.stringify(payload),
+        }).then((res) => res.json());
+
+        if (!res.success) {
+          toast.error(res.message);
+          return;
+        }
+
         setInputs({
           fullname: "",
           workemail: "",
@@ -57,7 +70,7 @@ const InputForm = () => {
 
   return (
     <form
-      className="p-4 bg-white rounded-[8px] grid grid-cols-1 shadow-md gap-4"
+      className="p-4 bg-white rounded-[8px] grid grid-cols-1 shadow-md gap-4 items-center"
       onSubmit={(e) => handleSubmit(e)}
     >
       <div className="grid grid-cols-1 gap-2">
@@ -148,7 +161,18 @@ const InputForm = () => {
           onChange={handleChange}
         />
       </div>
-      <button className="bg-[#1EA2EC] text-white rounded-md p-2 text-[16px] sm:p-3 sm:text-[26px]">
+      <ReCAPTCHA
+        sitekey={process.env.NEXT_PUBLIC_CAPTCHA_SITE_KEY}
+        onChange={(value) => {
+          setCaptcha(value);
+        }}
+      />
+      <button
+        disabled={!captcha}
+        className="
+        disabled:bg-gray-400
+        bg-[#1EA2EC] text-white rounded-md p-2 text-[16px] sm:p-3 sm:text-[26px]"
+      >
         Sent Inquiry
       </button>
     </form>
