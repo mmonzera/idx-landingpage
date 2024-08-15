@@ -1,33 +1,35 @@
-import nodemailer from "nodemailer"
-import React from 'react'
+import nodemailer from 'nodemailer';
+import { NextResponse } from 'next/server';
 
-export async function POST (req,res) {
-    const {fullname,workemail,phonenumber} = req.body;
-    const transporter = nodemailer.createTransport ({
-        host: "smtp.gmail.com",
-        port: "465",
-        secure: true,
-        auth: {
-            user: process.env.MY_APP_EMAIL,
-            pass: process.env.MY_APP_PASS,
-        }
-    });
+export async function POST(req) {
+  const { fullname, workemail, phonenumber, companyname, industry, inquiry } = await req.json();
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.MY_APP_EMAIL,
+      pass: process.env.MY_APP_PASS,
+    },
+  });
 
   try {
-    await transporter.sendMail ({
-        from: email,
-        to: process.env.MY_EMAIL_RECEIVER,
-        replyTo: email,
-        subject:`Inquiry dari ${fullname}`,
-        html: `<p>Inquiry dari:  ${fullname}</p> <br>
+    await transporter.sendMail({
+      from: process.env.MY_APP_EMAIL,
+      to: process.env.MY_EMAIL_RECEIVER,
+      replyTo: workemail,
+      subject: `Inquiry dari ${fullname}`,
+      html: `<p>Inquiry dari:  ${fullname}</p> <br>
         <p>email:  ${workemail}</p> <br>
-        <p>phone number:  ${phonenumber}</p> <br>`
-    })
-} catch (error){
-    return res.status(500).json({error:error.message || error.toString ()})
-}
-  return res.status(200).json({error: ""})
-  
+        <p>phone number:  ${phonenumber}</p> <br>
+        <p>company name:  ${companyname}</p> <br>
+        <p>industry:  ${industry}</p> <br>
+        <p>inquiry:  ${inquiry}</p> <br>`,
+    });
+  } catch (error) {
+    return NextResponse.json({ message: error.message || error.toString(), success:false });
+  }
+  return NextResponse.json({ message: 'Email sent successfully' , success:true });
 }
 
-export default POST
+export default POST;

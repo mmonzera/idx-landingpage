@@ -35,7 +35,7 @@ const EmblaCarousel = (props) => {
               </h2>
               <h3 className="text:[12px] sm:text-[24px] text-[#525252] leading:8px sm:leading-[50.49px] sm:tracking-[-0.505px] ">
                 Business users can create underwriting workflows or use
-                templates with iDecision's low-code environment, featuring API
+                templates with iDecisions low-code environment, featuring API
                 management and form generation.
               </h3>
             </div>
