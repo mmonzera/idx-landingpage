@@ -2,7 +2,15 @@ import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 
 export async function POST(req) {
-  const { fullname, workemail, phonenumber, companyname, industry, inquiry, recaptchaResponse } = await req.json();
+  const {
+    fullname,
+    workemail,
+    phonenumber,
+    companyname,
+    industry,
+    inquiry,
+    recaptchaResponse,
+  } = await req.json();
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
@@ -22,9 +30,11 @@ export async function POST(req) {
         json: true,
       },
     }
-  ).then ((res)=> res.json());
+  ).then((res) => res.json());
 
-
+  if (recaptcha.success === false) {
+    return NextResponse.json({ message: 'Invalid Captcha', success: false });
+  }
 
   try {
     await transporter.sendMail({
@@ -40,9 +50,13 @@ export async function POST(req) {
         <p>inquiry:  ${inquiry}</p> <br>`,
     });
   } catch (error) {
-    return NextResponse.json({ message: error.message || error.toString(), success:false });
+    return NextResponse.json({
+      message: error.message || error.toString(),
+      success: false,
+    });
   }
-  return NextResponse.json({ message: 'Email sent successfully' , success:true });
+  return NextResponse.json({
+    message: 'Email sent successfully',
+    success: true,
+  });
 }
-
-export default POST;

@@ -1,54 +1,56 @@
-import React from "react";
-import Navbar from "../component/navbar/Navbar";
-import Footer from "../component/Footer/Footer";
-import Image from "next/image";
-import IconArrowLeft from "/app/assets/icon-arrowLeft.svg";
-import blogDetailPicture from "/app/assets/blogDetailPicture.png";
+'use client';
 
+import React from 'react';
+import Navbar from '../component/navbar/Navbar';
+import Footer from '../component/Footer/Footer';
+import Image from 'next/image';
+import IconArrowLeft from '/app/assets/icon-arrowLeft.svg';
+import blogDetailPicture from '/app/assets/blogDetailPicture.png';
+import BackButton from '../component/button/BackButton';
 const Page = () => {
   return (
-    <div className="bg-white ">
-      <div className="px-[16px] sm:px-[80px] md:px-[160px] p-4 pt-[40px] sm:pt-[80px] md:pt-[160px]">
-        <div className="flex justify-between items-center">
-          <h1 className="text-[16px] font-semibold text-blue-500">
+    <div className='bg-white '>
+      <div className='px-[16px] sm:px-[80px] md:px-[160px] p-4 pt-[40px] sm:pt-[80px] md:pt-[160px]'>
+        <div className='flex justify-between items-center'>
+          <h1 className='text-[16px] font-semibold text-blue-500'>
             Blog / Technology
           </h1>
-          <button className="flex items-center justify-between gap-3 p-3">
+          <BackButton className='flex items-center justify-between gap-3 p-3'>
             <Image
               src={IconArrowLeft}
-              alt="Icon Arrow Left"
-              className="w-[20px] h-[20px]"
+              alt='Icon Arrow Left'
+              className='w-[20px] h-[20px]'
             />
-            <h2 className="text-[16px] text-blue-500">Back to List</h2>
-          </button>
+            <h2 className='text-[16px] text-blue-500'>Back to List</h2>
+          </BackButton>
         </div>
-        <div className="gap-[36px]">
-          <div className="gap-4">
-            <div className="px-3 py-2 bg-blue-200 rounded-[8px]">
-              <h1 className="text-blue-500 text-[24px] font-semibold">
+        <div className='gap-[36px]'>
+          <div className='gap-4'>
+            <div className='px-3 py-2 bg-blue-200 rounded-[8px]'>
+              <h1 className='text-blue-500 text-[24px] font-semibold'>
                 17 - 07 - 2024
               </h1>
             </div>
-            <h1 className="text-[48px] font-semibold text-blue-900">
-              {" "}
+            <h1 className='text-[48px] font-semibold text-blue-900'>
+              {' '}
               Data Science Fits into the Cloud Spend Equation
             </h1>
-            <h3 className="text-[18px]">by Amanda R</h3>
+            <h3 className='text-[18px]'>by Amanda R</h3>
           </div>
           <Image
             src={blogDetailPicture}
-            alt="blog detail Picture"
-            objectFit="cover"
-            sizes="100vw"
+            alt='blog detail Picture'
+            objectFit='cover'
+            sizes='100vw'
             style={{
-              width: "100%",
-              height: "auto",
+              width: '100%',
+              height: 'auto',
             }}
-            className="rounded-[4px] bg-cover"
+            className='rounded-[4px] bg-cover'
           />
         </div>
         <p>
-          {" "}
+          {' '}
           Last year, one of our users—Yuval Shwager, the head of product
           at Mixtiles—came to us with a question: “We want to offer buy now, pay
           later (BNPL) options, but how do we know they won’t add checkout
