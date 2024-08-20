@@ -1,12 +1,12 @@
 'use client';
 
 import React from 'react';
-import Navbar from '../component/navbar/Navbar';
-import Footer from '../component/Footer/Footer';
+import Navbar from '../../component/navbar/Navbar';
+import Footer from '../../component/Footer/Footer';
 import Image from 'next/image';
 import IconArrowLeft from '/app/assets/icon-arrowLeft.svg';
 import blogDetailPicture from '/app/assets/blogDetailPicture.png';
-import BackButton from '../component/button/BackButton';
+import BackButton from '../../component/button/BackButton';
 const Page = () => {
   return (
     <div className='bg-white '>
