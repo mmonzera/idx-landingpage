@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import IDXOptus from "/app/assets/Logo IDXOptus.png";
-import ISO from "/app/assets/Logo ISO.png";
+import ISO from "/app/assets/Logo ISO.svg";
 import Instagram from "/app/assets/Instagram Logo.png";
 import Linkedin from "/app/assets/Linkedin Logo.png";
 import Website from "/app/assets/Website Logo.png";
@@ -58,7 +58,11 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <Image className="flex-shrink-0" src={ISO} alt="Logo ISO" />
+          <Image
+            className="flex-shrink-0 w-[200px] h-[200px]"
+            src={ISO}
+            alt="Logo ISO"
+          />
         </div>
         <div className="flex gap-[12px]">
           <Image

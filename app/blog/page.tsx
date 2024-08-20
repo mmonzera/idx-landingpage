@@ -77,14 +77,14 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col w-full sm:flex-row gap-[24px] justify-between">
+            <div className="grid grid-cols-1 sm:grid-cols-3 w-full sm:flex-row gap-[24px] justify-between">
               <Card
                 src={BlogPicture}
                 publishedAt={"11-07-2024"}
                 alt={"blog"}
                 tag={"Tech"}
                 title={"Data Science Fits into the Cloud Spend Equation"}
-                url={"/"}
+                url={"/blogdetailfirst"}
               />
               <Card
                 src={BlogPicture}

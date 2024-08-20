@@ -8,13 +8,6 @@ const ProductCircle = (props) => {
   const { controlledSwiper } = props;
   return (
     <div className="bg-white w-100% flex flex-col px-[16px] items-center sm:px-[300px] py-[24px] gap-[32px]">
-      <h1 className="font-normal text-black text-[16px] sm:text-[44px] leading-loose tracking-tight text-center">
-        Unlock{" "}
-        <span className="text-[#07619D] font-semibold">
-          unparalleled advantages{" "}
-        </span>{" "}
-        for your business with our product
-      </h1>
       <div className="flex flex-col items-center justify-center">
         <div className="relative">
           <Image
@@ -58,7 +51,7 @@ const ProductCircle = (props) => {
           <div className="absolute right-[5%] top-[32%] flex w-0 justify-center">
             <Button
               variant="rounded"
-              className="text-green-800 border-[#4ADE80]"
+              className="text-green-800 border-[#4ADE80] hover:bg-[#DCFCE7]"
             >
               Loan Origination
             </Button>
@@ -66,7 +59,7 @@ const ProductCircle = (props) => {
           <div className="absolute left-[3%] top-[32%] flex w-0 justify-center">
             <Button
               variant="rounded"
-              className="text-green-800 border-[#4ADE80]"
+              className="text-green-800 border-[#4ADE80] hover:bg-[#DCFCE7]"
             >
               Supply Chain
             </Button>
@@ -74,7 +67,7 @@ const ProductCircle = (props) => {
           <div className="absolute left-[14%] bottom-[10%] flex w-0 justify-center">
             <Button
               variant="rounded"
-              className="text-[#D97706] border-[#FBBF24]"
+              className="text-[#D97706] border-[#FBBF24] hover:bg-[#FEF3C7]"
             >
               Regulatory Reporting
             </Button>
@@ -82,7 +75,7 @@ const ProductCircle = (props) => {
           <div className="absolute right-[14%] bottom-[10%] flex w-0 justify-center">
             <Button
               variant="rounded"
-              className="text-[#D97706] border-[#FBBF24]"
+              className="text-[#D97706] border-[#FBBF24] hover:bg-[#FEF3C7]"
             >
               Transaction Fraud
             </Button>
@@ -90,7 +83,7 @@ const ProductCircle = (props) => {
           <div className="absolute left-[50%] bottom-[-3%] flex w-0 justify-center">
             <Button
               variant="rounded"
-              className="text-[#D97706] border-[#FBBF24]"
+              className="text-[#D97706] border-[#FBBF24] hover:bg-[#FEF3C7]"
             >
               Anti Money Laundry
             </Button>
@@ -98,7 +91,7 @@ const ProductCircle = (props) => {
           <div className="absolute right-[5%] bottom-[32%] flex w-0 justify-center">
             <Button
               variant="rounded"
-              className="text-[#D97706] border-[#FBBF24]"
+              className="text-[#D97706] border-[#FBBF24] hover:bg-[#FEF3C7]"
             >
               Application Fraud
             </Button>
@@ -106,22 +99,30 @@ const ProductCircle = (props) => {
           <div className="absolute left-[3%] bottom-[32%] flex w-0 justify-center">
             <Button
               variant="rounded"
-              className="text-[#D97706] border-[#FBBF24]"
+              className="text-[#D97706] border-[#FBBF24] hover:bg-[#FEF3C7]"
             >
               KYC & CDD
             </Button>
           </div>
-          <div className="absolute left-[50%] top-[20%] flex w-0 justify-center">
-            <Button variant="square">Decision Engine</Button>
+          <div className="absolute left-[50%] top-[20%] flex w-0 justify-center ">
+            <Button variant="square" className=" hover:bg-[#E1F1FD]">
+              Decision Engine
+            </Button>
           </div>
-          <div className="absolute left-[50%] bottom-[20%] flex w-0 justify-center">
-            <Button variant="square">Machine Learning</Button>
+          <div className="absolute left-[50%] bottom-[20%] flex w-0 justify-center ">
+            <Button variant="square" className=" hover:bg-[#E1F1FD]">
+              Machine Learning
+            </Button>
           </div>
-          <div className="absolute left-[20%] top-[45%] flex w-0 justify-center">
-            <Button variant="square">Workflow Engine</Button>
+          <div className="absolute left-[20%] top-[45%] flex w-0 justify-center ">
+            <Button variant="square" className=" hover:bg-[#E1F1FD]">
+              Workflow Engine
+            </Button>
           </div>
-          <div className="absolute right-[20%] top-[45%] flex w-0 justify-center">
-            <Button variant="square">Integration Platform</Button>
+          <div className="absolute right-[20%] top-[45%] flex w-0 justify-center ">
+            <Button variant="square" className=" hover:bg-[#E1F1FD]">
+              Integration Platform
+            </Button>
           </div>
         </div>
       </div>

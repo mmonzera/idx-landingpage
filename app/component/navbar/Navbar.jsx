@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import Logo from "/app/assets/Logo iDecision - Colorized.svg";
 import Link from "next/link";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
     <div className="absolute inset-0 flex items-center z-[1000] h-[84px] top-[25px]">
       <nav className={styles.nav}>

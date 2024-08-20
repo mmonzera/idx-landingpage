@@ -57,12 +57,12 @@ const EmblaCarousel = (props) => {
             <div className="flex flex-col gap-6">
               <Image src={cardIcon} alt="cardIcon" />
               <h2 className="font-semibold text-[36px] text-[#525252]  ">
-                Achieve 90%+ STP in loan processing
+                Start new lending business from zero in 3 months{" "}
               </h2>
               <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
-                Making optimal decisions in mere second by incorporating risk
-                policies and risk calculation from multiple data sources,risk
-                scoring,ML models,and test strategies.
+                Complete suites of end-to-end credit cycle from underwriting,
+                loan management to debt collection in one platform enables new
+                financial institution to start lending business within 3 months.
               </h3>
             </div>
           </div>
@@ -70,12 +70,12 @@ const EmblaCarousel = (props) => {
             <div className="flex flex-col gap-6">
               <Image src={cardIcon} alt="cardIcon" />
               <h2 className="font-semibold text-[36px] text-[#525252]  ">
-                Achieve 90%+ STP in loan processing
+                Launch loan channelling & supply-chain financing{" "}
               </h2>
               <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
-                Making optimal decisions in mere second by incorporating risk
-                policies and risk calculation from multiple data sources,risk
-                scoring,ML models,and test strategies.
+                Streamline loan processing and supply chain finance with 100%
+                automated systems for decisioning, billing reconciliation,
+                buyback, and managing complex risk criteria.
               </h3>
             </div>
           </div>
@@ -83,12 +83,11 @@ const EmblaCarousel = (props) => {
             <div className="flex flex-col gap-6">
               <Image src={cardIcon} alt="cardIcon" />
               <h2 className="font-semibold text-[36px] text-[#525252]  ">
-                Achieve 90%+ STP in loan processing
+                Upgrade core loan system to flexible digital lending scheme{" "}
               </h2>
               <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
-                Making optimal decisions in mere second by incorporating risk
-                policies and risk calculation from multiple data sources,risk
-                scoring,ML models,and test strategies.
+                Boost market share with innovative loan schemes, high-volume
+                processing, and fully automated digital workflows.
               </h3>
             </div>
           </div>
@@ -96,12 +95,25 @@ const EmblaCarousel = (props) => {
             <div className="flex flex-col gap-6">
               <Image src={cardIcon} alt="cardIcon" />
               <h2 className="font-semibold text-[36px] text-[#525252]  ">
-                Achieve 90%+ STP in loan processing
+                Meet regulatory compliance in inter-connected digital world
               </h2>
               <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
-                Making optimal decisions in mere second by incorporating risk
-                policies and risk calculation from multiple data sources,risk
-                scoring,ML models,and test strategies.
+                Financial institutions must meet regulatory standards while
+                countering KYC & AML threats. Eliminate slow, resource-heavy
+                processes that risk operations and harm customer experience.
+              </h3>
+            </div>
+          </div>
+          <div className="embla__slide">
+            <div className="flex flex-col gap-6">
+              <Image src={cardIcon} alt="cardIcon" />
+              <h2 className="font-semibold text-[36px] text-[#525252]  ">
+                Tackle fraudsters with AI-driven detection{" "}
+              </h2>
+              <h3 className="text-[24px] text-[#525252] leading-[50.49px] tracking-[-0.505px] ">
+                iDecision fraud module uses AI to monitor transactions in
+                real-time, stopping suspected fraud with high accuracy and
+                minimal false positives.
               </h3>
             </div>
           </div>

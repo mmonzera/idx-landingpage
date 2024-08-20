@@ -68,15 +68,15 @@ const Carousel = (props) => {
               </h1>
               <p className="text-black text-[12px] sm:text-[24px]">
                 {" "}
-                Smart delinquent account queuing and prioritization with
-                flexible & dynamic collection strategies: best time to call, who
-                to contact first, which channel to use-powered by our AI
-                decision engine.
+                Comprehensive loan system for interest, fees, and charges,
+                including early payment, rollover, restructuring, write-off,
+                billing, and virtual account management. Fully parameterized
+                with a GUI for all types of consumer and commercial loan terms.
               </p>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
         <SwiperSlide>Slide 6</SwiperSlide>
